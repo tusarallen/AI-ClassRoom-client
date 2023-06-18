@@ -34,7 +34,7 @@ const NavBar = () => {
                   <Link>
                     <div className="w-16 rounded-full">
                       <img
-                        className="bg-gray-100 p-1 rounded-md"
+                        className="bg-gray-100 p-1 rounded-full"
                         src="https://i.ibb.co/1mBrSLs/ai.png"
                       />
                     </div>
