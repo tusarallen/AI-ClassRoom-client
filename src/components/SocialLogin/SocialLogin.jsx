@@ -40,7 +40,7 @@ const SocialLogin = () => {
       <div className="divider"></div>
       <div className="w-full text-center my-6">
         <button onClick={handleGoogleSignIn} className="btn btn-circle">
-          <FaGoogle style={{ fontSize: "30px" }} className="hover:text-[red]" />
+          <FaGoogle style={{ fontSize: "30px" }} className="hover:text-success" />
         </button>
       </div>
     </div>

@@ -44,7 +44,7 @@ const NavBar = () => {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start md:justify-between md:items-center">
             <div className="flex-shrink-0">
-              <div className="flex justify-center items-center gap-5">
+              <div className="flex justify-center items-center gap-8">
                 <div className="avatar">
                   <Link>
                     <div className="w-16 rounded-full">
