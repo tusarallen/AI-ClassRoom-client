@@ -18,9 +18,9 @@ const ExtraSection = () => {
           </h2>
 
           <p className="mt-4 text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
-            sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
+            In our AI institute, expert-designed curriculum, hands-on learning,
+            personalized guidance, and real-world focus empower students to
+            excel in AI is dynamic landscape.
           </p>
         </div>
 
@@ -31,12 +31,13 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">AI Essentials</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Unlock the potential of Artificial Intelligence with our
+                comprehensive course covering key concepts, algorithms, and
+                practical applications. Gain the skills to thrive in the
+                AI-driven future.
               </p>
             </div>
           </div>
@@ -47,12 +48,12 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">Machine Learning Mastery</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Become an expert in machine learning techniques through hands-on
+                projects, advanced algorithms, and data-driven insights. Unlock
+                limitless possibilities with the power of ML.
               </p>
             </div>
           </div>
@@ -63,12 +64,12 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">Deep Dive: Neural Networks</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Neural Networks: Delve into the intricacies of neural networks,
+                explore cutting-edge architectures, and unleash their potential
+                in solving complex problems. Master the art of deep learning.
               </p>
             </div>
           </div>
@@ -79,12 +80,14 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">
+                Language Processing Fundamentals
+              </h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Learn the core principles of natural language processing,
+                explore text analytics, and harness the power of language for
+                AI-driven applications.
               </p>
             </div>
           </div>
@@ -95,12 +98,14 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">
+                Vision Tech: Image Recognition
+              </h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Dive into the world of computer vision, unravel image
+                recognition algorithms, and unleash the potential of visual data
+                in AI applications
               </p>
             </div>
           </div>
@@ -111,12 +116,13 @@ const ExtraSection = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+              <h2 className="text-lg font-bold">AI in Business</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+                Discover how artificial intelligence is revolutionizing
+                industries, drive data-driven decision-making, and unlock new
+                opportunities for growth and innovation in the business
+                landscape
               </p>
             </div>
           </div>

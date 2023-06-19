@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
           </div>
         </button>
       ) : (
-        <button className="bg-info text-black font-extrabold p-[10px] rounded-3xl">
+        <button className="bg-[#ff7700] text-black font-extrabold p-[10px] rounded-3xl">
           <div className="flex justify-center items-center">
             <div>Dark</div> <div>Mode</div>
           </div>

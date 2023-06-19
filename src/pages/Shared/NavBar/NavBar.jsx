@@ -27,7 +27,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-gray-50 w-full rounded-md p-1">
+    <nav className="bg-gray-900 text-white w-full p-1">
       <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -44,7 +44,7 @@ const NavBar = () => {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start md:justify-between md:items-center">
             <div className="flex-shrink-0">
-              <div className="flex justify-center items-center gap-8">
+              <div className="flex justify-center items-center gap-2">
                 <div className="avatar">
                   <Link>
                     <div className="w-16 rounded-full">
@@ -57,12 +57,12 @@ const NavBar = () => {
                 </div>
                 <div className="flex-shrink-0 text-center md:ml-8">
                   <div>
-                    <h1 className="text-[#1A1919] font-extrabold text-2xl pt-2">
+                    <h1 className="text-white font-extrabold text-2xl pt-2">
                       Training
                     </h1>
                   </div>
                   <div>
-                    <span className="font-extrabold text-2xl -ml-7 text-[#ff7700]">
+                    <span className="font-extrabold text-2xl text-[#ff7700]">
                       Institutes
                     </span>
                   </div>
@@ -79,7 +79,7 @@ const NavBar = () => {
                         ? "pending"
                         : isActive
                         ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                        : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
+                        : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
                     }
                   >
                     Home
@@ -92,7 +92,7 @@ const NavBar = () => {
                         ? "pending"
                         : isActive
                         ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                        : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
+                        : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
                     }
                   >
                     Instructors
@@ -105,7 +105,7 @@ const NavBar = () => {
                         ? "pending"
                         : isActive
                         ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                        : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
+                        : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
                     }
                   >
                     Courses
@@ -176,7 +176,7 @@ const NavBar = () => {
                         ? "pending"
                         : isActive
                         ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                        : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
+                        : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
                     }
                   >
                     Login

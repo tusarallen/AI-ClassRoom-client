@@ -48,7 +48,7 @@ function Testimonial() {
           >
             <div className="swiper-wrapper flex md:flex-row flex-col-reverse">
               <div className="swiper-slide">
-                <blockquote className="bg-gray-100 p-8">
+                <blockquote className="bg-gray-900 text-white p-8">
                   <div className="flex items-center gap-4">
                     <img
                       alt="Dog"
@@ -60,7 +60,7 @@ function Testimonial() {
                       <p className="mt-1">San Francisco, USA</p>
                     </div>
                   </div>
-                  <p className="relative mt-4 text-gray-500">
+                  <p className="relative mt-4 text-white">
                     <span className="text-xl">&ldquo;</span>
                     Thanks to the comprehensive AI training at our institute, I
                     landed my dream job as a data scientist. The practical
@@ -72,7 +72,7 @@ function Testimonial() {
                 </blockquote>
               </div>
               <div className="swiper-slide">
-                <blockquote className="bg-gray-100 p-8">
+                <blockquote className="bg-gray-900 text-white p-8">
                   <div className="flex items-center gap-4">
                     <img
                       alt="Dog"
@@ -84,7 +84,7 @@ function Testimonial() {
                       <p className="mt-1">London, UK</p>
                     </div>
                   </div>
-                  <p className="relative mt-4 text-gray-500">
+                  <p className="relative mt-4 text-white">
                     <span className="text-xl">&ldquo;</span>
                     Enrolling in the AI program here was a turning point in my
                     life. The practical approach, real-world projects, and
@@ -96,7 +96,7 @@ function Testimonial() {
                 </blockquote>
               </div>
               <div className="swiper-slide">
-                <blockquote className="bg-gray-100 p-8">
+                <blockquote className="bg-gray-900 p-8">
                   <div className="flex items-center gap-4">
                     <img
                       alt="Dog"
@@ -108,7 +108,7 @@ function Testimonial() {
                       <p className="mt-1">Toronto, Canada</p>
                     </div>
                   </div>
-                  <p className="relative mt-4 text-gray-500">
+                  <p className="relative mt-4 text-white">
                     <span className="text-xl">&ldquo;</span>I can not thank our
                     institute enough for transforming my career. The AI training
                     equipped me with the skills sought after by leading

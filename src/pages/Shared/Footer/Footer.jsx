@@ -2,10 +2,10 @@ const Footer = () => {
   return (
     <>
       <div>
-        <footer className="footer p-10 bg-gray-50 text-base-content font-bold">
+        <footer className="footer p-10 bg-gray-900 text-white font-bold">
           <div>
             <img
-              className="md:w-[130px] md:h-[120px]"
+              className="w-[130px] h-[120px]"
               src="https://i.ibb.co/1mBrSLs/ai.png"
               alt=""
             />
@@ -41,7 +41,7 @@ const Footer = () => {
         </footer>
       </div>
       <div>
-        <div className="footer p-10 bg-gray-50 text-base-content font-bold">
+        <div className="footer p-10 bg-gray-900 text-white font-bold">
           <p className="flex mx-auto">
             Copyright © 2023 - All right reserved by AI-ClassRoom Ltd
           </p>
