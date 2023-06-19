@@ -1,14 +1,29 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
+import DarkModeToggle from "../../../components/DarkModeToggle/DarkModeToggle";
+import { AuthContext } from "../../../providers/AuthProvider";
+import useAdmin from "../../../hooks/useAdmin";
+import useInstructors from "../../../hooks/useInstructors";
 
 const NavBar = () => {
+  const { user, logOut } = useContext(AuthContext);
   const [isOpen, setIsOpen] = useState(false);
+  const [isAdmin] = useAdmin();
+  const [isInstructor] = useInstructors();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => {})
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
 
   return (
@@ -43,12 +58,12 @@ const NavBar = () => {
                 <div className="flex-shrink-0 text-center md:ml-8">
                   <div>
                     <h1 className="text-[#1A1919] font-extrabold text-2xl pt-2">
-                      AI-ClassRoom
+                      Training
                     </h1>
                   </div>
                   <div>
                     <span className="font-extrabold text-2xl -ml-7 text-[#ff7700]">
-                      Training-Institutes
+                      Institutes
                     </span>
                   </div>
                 </div>
@@ -93,11 +108,13 @@ const NavBar = () => {
                         : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
                     }
                   >
-                    Classes
+                    Courses
                   </NavLink>
                 </div>
-                <div>{/* <DarkModeToggle /> */}</div>
-                {/* {user ? (
+                <div>
+                  <DarkModeToggle />
+                </div>
+                {user ? (
                   <>
                     <NavLink
                       to={
@@ -164,7 +181,7 @@ const NavBar = () => {
                   >
                     Login
                   </NavLink>
-                )} */}
+                )}
               </div>
             </div>
           </div>
@@ -198,7 +215,7 @@ const NavBar = () => {
             Classes
           </Link>
 
-          {/* {user ? (
+          {user ? (
             <>
               <Link
                 to="/dashboard/manageUsers"
@@ -246,7 +263,7 @@ const NavBar = () => {
             >
               Login
             </NavLink>
-          )} */}
+          )}
         </div>
       </div>
     </nav>

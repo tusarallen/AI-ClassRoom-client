@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
-// import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
-// import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
-  //   const { signIn } = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -22,24 +22,24 @@ const Login = () => {
   const handleLogin = (data) => {
     const { email, password } = data;
 
-    // signIn(email, password)
-    //   .then((result) => {
-    //     const user = result.user;
-    //     console.log(user);
-    //     Swal.fire({
-    //       title: "User Login Successfully",
-    //       showClass: {
-    //         popup: "animate__animated animate__fadeInDown",
-    //       },
-    //       hideClass: {
-    //         popup: "animate__animated animate__fadeOutUp",
-    //       },
-    //     });
-    //     navigate(from, { replace: true });
-    //   })
-    //   .catch((error) => {
-    //     setError("Password not matched"); // Set the error message
-    //   });
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        Swal.fire({
+          title: "User Login Successfully",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+        });
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        setError("Password not matched"); // Set the error message
+      });
   };
 
   const togglePasswordVisibility = () => {
@@ -126,7 +126,7 @@ const Login = () => {
                 </Link>
               </small>
             </p>
-            {/* <SocialLogin /> */}
+            <SocialLogin />
           </div>
         </div>
       </div>

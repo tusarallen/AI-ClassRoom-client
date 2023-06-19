@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-// import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
-// import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import Swal from "sweetalert2";
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
   const [passwordMatch, setPasswordMatch] = useState(false);
@@ -15,7 +15,7 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  //   const { createUser, profileUpdate } = useContext(AuthContext);
+    const { createUser, profileUpdate } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
@@ -233,7 +233,7 @@ const SignUp = () => {
                 </Link>
               </small>
             </p>
-            {/* <SocialLogin /> */}
+            <SocialLogin />
           </div>
         </div>
       </div>
