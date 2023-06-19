@@ -3,7 +3,7 @@ import aii from "../../assets/about/about-sm3.jpg";
 
 const About = () => {
   return (
-    <>
+    <div className="mb-12">
       <h2 className="text-center font-extrabold text-3xl text-orange-500 mt-12">
         WHO WE ARE
       </h2>
@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

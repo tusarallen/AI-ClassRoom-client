@@ -55,7 +55,7 @@ const NavBar = () => {
                     </div>
                   </Link>
                 </div>
-                <div className="flex-shrink-0 text-center md:ml-8">
+                <div className="flex-shrink-0 text-center">
                   <div>
                     <h1 className="text-white font-extrabold text-2xl pt-2">
                       Training
@@ -70,7 +70,7 @@ const NavBar = () => {
               </div>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-1">
                 <div className="flex justify-center items-center md:mr-[260px] gap-8">
                   <NavLink
                     to="/"
@@ -129,7 +129,7 @@ const NavBar = () => {
                           ? "pending"
                           : isActive
                           ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                          : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-bold"
+                          : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
                       }
                     >
                       Dashboard
@@ -148,17 +148,20 @@ const NavBar = () => {
                       </label>
                       <ul
                         tabIndex={0}
-                        className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52 z-10"
+                        className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-900 rounded-box w-52 z-10"
                       >
                         <li>
-                          <Link to="/" className="justify-between font-bold">
+                          <Link
+                            to="/"
+                            className="justify-between font-bold text-white"
+                          >
                             Profile
                             <span className="badge font-bold">New</span>
                           </Link>
                         </li>
                         <li>
                           <Link
-                            className="font-bold"
+                            className="font-bold text-white hover:text-white"
                             onClick={handleLogOut}
                             to="/"
                           >
@@ -193,24 +196,24 @@ const NavBar = () => {
         className={`sm:hidden ${isOpen ? "block" : "hidden"}`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
           <Link
             to="/"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+            className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
           >
             Home
           </Link>
 
           <Link
             to="/instructors"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+            className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
           >
             Instructors
           </Link>
 
           <Link
             to="/classes"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+            className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
           >
             Classes
           </Link>
@@ -223,7 +226,7 @@ const NavBar = () => {
             <>
               <Link
                 to="/dashboard/manageUsers"
-                className="text-[#1A1919] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+                className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
               >
                 Dashboard
               </Link>
@@ -238,16 +241,23 @@ const NavBar = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-900 rounded-box w-52 z-10"
                 >
                   <li>
-                    <Link to="/" className="justify-between font-bold">
+                    <Link
+                      to="/"
+                      className="justify-between font-bold text-white"
+                    >
                       Profile
                       <span className="badge">New</span>
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={handleLogOut} className="font-bold" to="/">
+                    <Link
+                      onClick={handleLogOut}
+                      className="font-bold text-white hover:text-white"
+                      to="/"
+                    >
                       Logout
                     </Link>
                   </li>
@@ -262,7 +272,7 @@ const NavBar = () => {
                   ? "pending"
                   : isActive
                   ? "text-[#ff7700] px-3 py-2 rounded-md text-xl  font-bold"
-                  : "text-[#1A1919] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl  font-bold"
+                  : "text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl  font-bold"
               }
             >
               Login

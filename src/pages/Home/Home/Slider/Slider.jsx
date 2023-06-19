@@ -8,25 +8,25 @@ const Slider = () => {
         <div>
           <img
             className="rounded-lg"
-            src="https://i.ibb.co/r5tJ5p3/Artificial-Intelligence-1-1.jpg"
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-lg"
             src="https://i.ibb.co/2FRNsgD/rm373batch5-blogbanner-08.jpg"
           />
         </div>
         <div>
           <img
             className="rounded-lg"
-            src="https://i.ibb.co/nQBdc3d/AI-governance-lead.jpg"
+            src="https://i.ibb.co/r5tJ5p3/Artificial-Intelligence-1-1.jpg"
           />
         </div>
         <div>
           <img
             className="rounded-lg"
             src="https://i.ibb.co/WnPtmxq/rm373batch5-blogbanner-03.jpg"
+          />
+        </div>
+        <div>
+          <img
+            className="rounded-lg"
+            src="https://i.ibb.co/nQBdc3d/AI-governance-lead.jpg"
           />
         </div>
         <div>
