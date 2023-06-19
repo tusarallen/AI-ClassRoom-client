@@ -215,6 +215,10 @@ const NavBar = () => {
             Classes
           </Link>
 
+          <div>
+            <DarkModeToggle />
+          </div>
+
           {user ? (
             <>
               <Link
